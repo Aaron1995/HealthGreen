@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_fragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/setting_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/user"
+            android:textColor="@color/color_text_gray"
+            android:textSize="20dp" />
+
+        <com.aarondesign.healthgreen.ModifyView.ClearEditText
+            android:id="@+id/input_user"
+            android:layout_width="144dp"
+            android:layout_height="36dp"
+            android:layout_below="@+id/setting"
+            android:layout_marginLeft="24dp"
+            android:layout_toRightOf="@+id/setting_user"
+            android:background="@drawable/edittext_bg"
+            android:cursorVisible="true"
+            android:drawableRight="@drawable/icon_remove1"
+            android:hint="昵称"
+            android:maxLength="12"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="#626c7f"
+            android:textColorHint="#626c7f"
+            android:textCursorDrawable="@null"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/setting_user"
+        android:layout_below="@+id/setting_user"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/setting_user"
+            android:layout_below="@+id/setting_user"
+            android:layout_gravity="center"
+            android:text="@string/setting_sex"
+            android:textColor="@color/color_text_gray"
+            android:textSize="20dp" />
+
+        <RadioGroup
+            android:id="@+id/rg_sex"
+            android:layout_width="144dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="24dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_man"
+                android:layout_width="72dp"
+                android:layout_height="24dp"
+                android:checked="true"
+                android:text="男"
+                android:textColor="@color/color_text_gray" />
+
+            <RadioButton
+                android:id="@+id/rb_woman"
+                android:layout_width="72dp"
+                android:layout_height="24dp"
+                android:text="女"
+                android:textColor="@color/color_text_gray" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_height_weight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/setting_user"
+        android:layout_below="@+id/setting_sex"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/setting_height"
+            android:textColor="@color/color_text_gray"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/input_height"
+            android:layout_width="48dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/edittext_bg"
+            android:cursorVisible="true"
+            android:hint="cm"
+            android:maxLength="3"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="#626c7f"
+            android:textColorHint="#626c7f"
+            android:textCursorDrawable="@null" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_required" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="@string/setting_weight"
+            android:textColor="@color/color_text_gray"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/input_weight"
+            android:layout_width="48dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/edittext_bg"
+            android:cursorVisible="true"
+            android:hint="kg"
+            android:maxLength="3"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="#626c7f"
+            android:textColorHint="#626c7f"
+            android:textCursorDrawable="@null" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_required" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_ages_fvc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/setting_user"
+        android:layout_below="@+id/setting_height_weight"
+        android:layout_marginTop="16dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/setting_ages"
+            android:textColor="@color/color_text_gray"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/input_ages"
+            android:layout_width="48dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/edittext_bg"
+            android:cursorVisible="true"
+            android:hint="岁"
+            android:maxLength="3"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="#626c7f"
+            android:textColorHint="#626c7f"
+            android:textCursorDrawable="@null" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_required" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="@string/setting_fvc"
+            android:textColor="@color/color_text_gray"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/input_fvc"
+            android:layout_width="48dp"
+            android:layout_height="36dp"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/edittext_bg"
+            android:cursorVisible="true"
+            android:hint="ml"
+            android:maxLength="5"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="#626c7f"
+            android:textColorHint="#626c7f"
+            android:textCursorDrawable="@null" />
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_required" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting_boolean_car"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/setting_user"
+        android:layout_below="@+id/setting_ages_fvc"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/setting_user"
+            android:layout_below="@+id/setting_ages_fvc"
+            android:layout_gravity="center"
+            android:text="@string/setting_boolean_car"
+            android:textColor="@color/color_text_gray"
+            android:textSize="20dp" />
+
+        <ToggleButton
+            android:id="@+id/setting_car_have"
+            android:layout_width="48dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="24dp"
+            android:layout_toRightOf="@id/setting_boolean_car"
+            android:background="@drawable/icon_btn_r_slip"
+            android:clickable="true"
+            android:textOff=""
+            android:textOn="" />
+
+    </LinearLayout>
+
+
+    //没车的时候不可见 有车的时候可见
+
+    <View
+        android:id="@+id/setting_car_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/setting_boolean_car"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="8dp"
+        android:background="@color/color_text_gray"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/setting_have_car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/setting_user"
+        android:layout_below="@+id/setting_car_line"
+        android:layout_marginRight="36dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/setting_ages_fvc"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/car_kind"
+            android:textColor="@color/color_text_gray"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/setting_spinner_car_kind"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="36dp"
+            android:background="@drawable/edittext_bg"
+            android:entries="@array/kind"></Spinner>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/iv_setting_set"
+        android:layout_width="128dp"
+        android:layout_height="48dp"
+        android:text="完成"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:textColor="@color/color_text_white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_bg_clickable"/>
+
+</RelativeLayout>

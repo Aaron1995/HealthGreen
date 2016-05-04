@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_white"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20">
+
+        <ImageView
+            android:id="@+id/register_iv_on_turn"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/icon_on_turn" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80">
+
+        <LinearLayout
+            android:id="@+id/register_login"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/phone"
+                android:textColor="@color/color_text_gray"
+                android:textSize="24dp" />
+
+            <com.aarondesign.healthgreen.ModifyView.ClearEditText
+                android:id="@+id/register_cet_user"
+                android:layout_width="144dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/edittext_bg"
+                android:cursorVisible="true"
+                android:drawableRight="@drawable/icon_remove1"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textColor="@drawable/edittext_bg"
+                android:textCursorDrawable="@null"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/register_password"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignLeft="@+id/register_login"
+            android:layout_below="@id/register_login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/password"
+                android:textColor="@color/color_text_gray"
+                android:textSize="24dp" />
+
+            <com.aarondesign.healthgreen.ModifyView.ClearEditText
+                android:id="@+id/register_cet_password"
+                android:layout_width="144dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/edittext_bg"
+                android:cursorVisible="true"
+                android:drawableRight="@drawable/icon_remove1"
+                android:inputType="textPassword"
+                android:maxLength="16"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textColor="#626c7f"
+                android:textCursorDrawable="@null"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:id="@+id/register_iv_pwd"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_below="@+id/register_login"
+                android:layout_gravity="center"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/register_password"
+                android:src="@drawable/icon_pwd_hide" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/register_code"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignLeft="@+id/register_login"
+            android:layout_below="@id/register_password"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/input_code"
+                android:textColor="@color/color_text_gray"
+                android:textSize="24dp" />
+
+            <com.aarondesign.healthgreen.ModifyView.ClearEditText
+                android:id="@+id/register_cet_code"
+                android:layout_width="96dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/edittext_bg"
+                android:cursorVisible="true"
+                android:drawableRight="@drawable/icon_remove1"
+                android:inputType="number"
+                android:maxLength="4"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textColor="#626c7f"
+                android:textCursorDrawable="@null"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/register_btn_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/edittext_bg"
+                android:padding="0dp"
+                android:text="@string/get_code"
+                android:textColor="#626C7F"
+                android:textSize="8dp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/register_iv_user_set"
+            android:layout_width="128dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/register_code"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="64dp"
+            android:text="确定"
+            android:textColor="@color/color_text_white"
+            android:background="@drawable/btn_bg_clickable"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

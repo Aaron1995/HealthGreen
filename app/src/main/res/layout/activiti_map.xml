@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_map"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:background="@color/bg_gray_black">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:id="@+id/map_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="起点:  "
+                    android:textColor="@color/color_text_gray" />
+
+                <AutoCompleteTextView
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bg"
+                    android:paddingLeft="@dimen/half_of_16dp"
+                    android:textColor="@color/bg_gray_black"
+                    android:textCursorDrawable="@null" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:text="终点:  "
+                    android:textColor="@color/color_text_gray" />
+
+                <AutoCompleteTextView
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittext_bg"
+                    android:paddingLeft="@dimen/half_of_16dp"
+                    android:textColor="@color/bg_gray_black"
+                    android:textCursorDrawable="@null" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/map_iv_search"
+                android:layout_width="56dp"
+                android:layout_height="24dp"
+                android:layout_below="@+id/map_ll"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/btn_bg_clickable"
+                android:text="搜索"
+                android:textColor="@color/color_text_white" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="80" />
+
+</LinearLayout>

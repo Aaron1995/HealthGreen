@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_text">#ecf0f1</color>
+    <color name="color_bg_all">#626C7F</color>
+    <color name="color_bg_white">#ffffff</color>
+    <color name="color_clear_bg">#00626c7f</color>
+
+    // blue
+    <color name="color_blue_light">#4CACFF</color>
+    <color name="color_blue_1">#38929B</color>
+    <color name="color_blue_2">#38929B</color>
+    <color name="color_blue_3">#38929B</color>
+    <color name="color_blue_4">#38929B</color>
+    <color name="color_blue_5">#38929B</color>
+
+    <color name="color_background_top">#3E3C4A</color>
+    <color name="color_background_center">#444150</color>
+    <color name="color_background_bottom">#3E3C49</color>
+    <color name="color_bg_center_start">#3E3C4B</color>
+    <color name="color_bg_center_end">#4C4A57</color>
+
+    // home layout color
+    <color name="color_bg_viewpager">#F2F2F2</color>
+    <color name="color_bg_top">#3E3C4A</color>
+    <color name="color_bg_content">#ffffff</color>
+    <color name="color_bg_bottom_bar">#3E3C49</color>
+    <color name="color_bg_tab">#4C4A57</color>
+
+    <color name="color_bg_gray">#ffffff</color>
+    <color name="color_text_gray">#9E9E9E</color>
+    <color name="color_text_black">#000000</color>
+    <color name="color_text_white">#FFFFFF</color>
+    <color name="color_text_blue">#38929B</color>
+
+    <color name="color_bg_fragment">#E8E5E9</color>
+    <color name="color_bg_map">#F2F2F2</color>
+    <color name="color_bg_edittext">#F2F2F2</color>
+    <color name="color_bg_login">#F2F2F2</color>
+
+    <color name="bg_blue">#509599</color>
+    <color name="bg_red">#D85739</color>
+    <color name="bg_gray_black">#3E3C4A</color>
+
+</resources>

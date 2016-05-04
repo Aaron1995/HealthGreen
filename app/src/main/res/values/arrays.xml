@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="car_kind">
+        <item>普通私家车</item>
+        <item>轻型货车</item>
+        <item>重型货车</item>
+        <item>公交或者长途汽车</item>
+    </string-array>
+
+    <string-array name="car_power">
+        <item>90#汽油</item>
+        <item>93#汽油</item>
+        <item>95#汽油</item>
+        <item>97#汽油</item>
+        <item>0#柴油</item>
+    </string-array>
+
+    <string-array name="car_displacement">
+        <item>1.4L~2.0L</item>
+        <item>1.4L以下</item>
+        <item>2.0L以上</item>
+    </string-array>
+
+    <string-array name="kind">
+        <item>小轿车 - 汽油 - 1.4L以下</item>
+        <item>小轿车 - 汽油 - 1.4L-2.0L</item>
+        <item>小轿车 - 汽油 - 2.0L以上</item>
+        <item>公交车 - 汽油</item>
+        <item>小型货车 - 液化石油气LPG - 2.5t以下</item>
+        <item>轻型货车 - 汽油 - 3.5t以下</item>
+        <item>轻型货车 - 柴油 - 3.5t以下</item>
+        <item>重型货车 - 汽油 - 3.5t以上</item>
+        <item>重型货车 - 柴油 - 3.5t以上</item>
+    </string-array>
+</resources>

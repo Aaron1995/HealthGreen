@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_fragment"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_item"
+        android:layout_height="100dp"
+        android:layout_marginBottom="@dimen/half_of_8dp"
+        android:elevation="@dimen/elevation">
+
+        <TextView
+            android:id="@+id/person_tv_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:text="10"
+            android:textColor="@color/color_text_gray"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/person_tv_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/person_tv_month"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:text="2016"
+            android:textColor="@color/color_text_gray"
+            android:textSize="10dp" />
+
+        <View
+            android:id="@+id/person_divider"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/person_tv_month"
+            android:background="@color/color_text_gray" />
+
+        <TextView
+            android:id="@+id/person_tv_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/person_tv_month"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@+id/person_divider"
+            android:text="20"
+            android:textColor="@color/color_text_gray"
+            android:textSize="10dp" />
+
+        <View
+            android:id="@+id/person_divider2"
+            android:layout_width="20dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="24dp"
+            android:layout_toRightOf="@+id/person_divider"
+            android:background="@color/color_text_gray" />
+
+        <TextView
+            android:id="@+id/person_tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/person_tv_day"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/person_tv_day"
+            android:text="17:09"
+            android:textColor="@color/color_text_gray"
+            android:textSize="10dp" />
+
+
+        <ImageView
+            android:id="@+id/person_iv_location"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_alignBottom="@+id/person_tv_month"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:src="@drawable/icon_location" />
+
+        <TextView
+            android:id="@+id/person_tv_route"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/person_tv_month"
+            android:layout_marginRight="4dp"
+            android:layout_toLeftOf="@+id/person_iv_location"
+            android:text="杭州师范大学"
+            android:textColor="@color/color_text_gray"
+            android:textSize="10dp" />
+
+
+        <LinearLayout
+            android:id="@+id/person_ll1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/person_tv_time"
+            android:layout_below="@id/person_tv_time"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/person_tv_freed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:elevation="@dimen/elevation"
+                    android:text="200"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="2dp"
+                    android:text=" mg"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="8dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/person_tv_freed"
+                android:layout_gravity="center"
+                android:text="环境释放"
+                android:textColor="@color/color_text_gray"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/person_ll2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/person_tv_time"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/person_ll1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/person_tv_inhale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:elevation="@dimen/elevation"
+                    android:text="3"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="2dp"
+                    android:text=" mg"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="8dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/person_tv_freed"
+                android:layout_gravity="center"
+                android:text="个人吸入"
+                android:textColor="@color/color_text_gray"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/person_ll3"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/person_tv_time"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@+id/person_ll2"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:id="@+id/person_tv_stay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:elevation="@dimen/elevation"
+                    android:text="2"
+                    android:textColor="@color/color_text_black"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="2dp"
+                    android:text=" mg"
+                    android:textColor="@color/color_text_gray"
+                    android:textSize="8dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/person_tv_freed"
+                android:layout_gravity="center"
+                android:text="残留体内"
+                android:textColor="@color/color_text_gray"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

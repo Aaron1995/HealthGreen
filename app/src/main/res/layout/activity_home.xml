@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#626C7F"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:id="@+id/setting"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_weight="10"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/home_iv_person"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icon_person_yes" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:text="@string/app_name"
+            android:textColor="#ecf0f1"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"></LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_rl_user"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="48dp"
+        android:layout_weight="10">
+
+        <ImageView
+            android:id="@+id/home_iv_people"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_people" />
+
+        <TextView
+            android:id="@+id/home_tv_inhale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:layout_toRightOf="@+id/home_iv_people"
+            android:text="@string/home_inhale"
+            android:textColor="#ecf0f1" />
+
+        <TextView
+            android:id="@+id/home_tv_inhale_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/home_tv_inhale"
+            android:text="0.0mg"
+            android:textColor="#ecf0f1"
+            android:textSize="24dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/home_iv_people"
+            android:background="#ecf0f1" />
+
+        <TextView
+            android:id="@+id/home_tv_stay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/home_tv_inhale_num"
+            android:text="@string/home_stay"
+            android:textColor="#ecf0f1" />
+
+        <TextView
+            android:id="@+id/home_tv_stay_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/home_tv_stay"
+            android:text="0.0mg"
+            android:textColor="#ecf0f1"
+            android:textSize="24dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"></LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_rl_car"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginRight="48dp"
+        android:layout_weight="10">
+
+        <ImageView
+            android:id="@+id/home_iv_car"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_carr" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/home_iv_car"
+            android:background="#ecf0f1" />
+
+        <TextView
+            android:id="@+id/home_tv_gasoline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="24dp"
+            android:layout_toLeftOf="@+id/home_iv_car"
+            android:text="@string/home_gasoline"
+            android:textColor="#ecf0f1" />
+
+        <TextView
+            android:id="@+id/home_tv_gasoline_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@+id/home_tv_gasoline"
+            android:text="0.0mL"
+            android:textColor="#ecf0f1"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/home_tv_exhaust"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@+id/home_tv_gasoline_num"
+            android:text="@string/home_exhaust"
+            android:textColor="#ecf0f1" />
+
+        <TextView
+            android:id="@+id/home_tv_exhaust_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@+id/home_tv_exhaust"
+            android:text="0.0mg"
+            android:textColor="#ecf0f1"
+            android:textSize="24dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"></LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20">
+
+        <ImageView
+            android:id="@+id/home_iv_left_time"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:src="@drawable/icon_left_turn" />
+
+        <ImageView
+            android:id="@+id/home_iv_right_time"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:src="@drawable/icon_right_turn" />
+
+        <RelativeLayout
+            android:id="@+id/home_rl_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/home_tv_month_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="10月29日"
+                android:textColor="#ecf0f1"
+                android:textSize="24dp" />
+
+            <TextView
+                android:id="@+id/home_tv_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/home_tv_month_day"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:text="2015"
+                android:textColor="#ecf0f1" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <ImageView
+            android:id="@+id/home_iv_map"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            android:src="@drawable/icon_down_turn" />
+
+    </RelativeLayout>
+
+</LinearLayout>

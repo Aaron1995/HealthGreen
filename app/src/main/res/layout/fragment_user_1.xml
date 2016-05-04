@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_bg_fragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/frg_user_rl1"
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                android:layout_marginLeft="@dimen/half_of_16dp"
+                android:layout_marginRight="@dimen/half_of_16dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/bg_item"
+                android:elevation="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/frg_user_rl1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="96dp">
+
+                    <ImageView
+                        android:id="@+id/frg_user_iv_picture"
+                        android:layout_width="72dp"
+                        android:layout_height="72dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:background="@drawable/icon_picture"
+                        android:elevation="5dp" />
+
+                    <TextView
+                        android:id="@+id/frg_user_tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:layout_toRightOf="@+id/frg_user_iv_picture"
+                        android:text="Hanawa"
+                        android:textColor="@color/color_text_black"
+                        android:textSize="20sp" />
+
+                    <ImageView
+                        android:id="@+id/frg_user_iv_gender"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/frg_user_tv_name"
+                        android:background="@drawable/icon_man" />
+
+                    <TextView
+                        android:id="@+id/frg_user_tv_height_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:text="172cm/58kg"
+                        android:textColor="@color/color_text_black" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="96dp"
+                    android:background="@color/color_bg_fragment" />
+
+                <RelativeLayout
+                    android:id="@+id/frg_user_rl1_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/frg_user_rl1_1">
+
+                    <ImageView
+                        android:id="@+id/frg_user_iv_age"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:background="@drawable/icon_age" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/half_of_16dp"
+                        android:layout_toRightOf="@+id/frg_user_iv_age"
+                        android:text="年龄"
+                        android:textColor="@color/color_text_black" />
+
+                    <TextView
+                        android:id="@+id/frg_user_tv_age"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:text="21"
+                        android:textColor="@color/color_text_black" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="144dp"
+                    android:background="@color/color_bg_fragment" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/frg_user_rl1_2">
+
+                    <ImageView
+                        android:id="@+id/frg_user_iv_fvc"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:background="@drawable/icon_fvc" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/half_of_16dp"
+                        android:layout_toRightOf="@+id/frg_user_iv_fvc"
+                        android:text="肺活量"
+                        android:textColor="@color/color_text_black" />
+
+                    <TextView
+                        android:id="@+id/frg_user_tv_fvc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:text="5700mL"
+                        android:textColor="@color/color_text_black" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/frg_user_rl2"
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                android:layout_below="@+id/frg_user_rl1"
+                android:layout_marginLeft="@dimen/half_of_16dp"
+                android:layout_marginRight="@dimen/half_of_16dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:background="@drawable/bg_item"
+                android:elevation="5dp">
+
+                <RelativeLayout
+                    android:id="@+id/frg_user_rl2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp">
+
+                    <ImageView
+                        android:id="@+id/frg_user_iv_carkind"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:background="@drawable/icon_car_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/half_of_16dp"
+                        android:layout_toRightOf="@+id/frg_user_iv_carkind"
+                        android:text="车辆"
+                        android:textColor="@color/color_text_black" />
+
+                    <TextView
+                        android:id="@+id/frg_user_tv_carkind"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:text="小轿车"
+                        android:textColor="@color/color_text_black" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/frg_user_rl2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/frg_user_rl2_1">
+
+                    <ImageView
+                        android:id="@+id/frg_user_iv_power"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:background="@drawable/icon_petrol_1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/half_of_16dp"
+                        android:layout_toRightOf="@+id/frg_user_iv_power"
+                        android:text="动力"
+                        android:textColor="@color/color_text_black" />
+
+                    <TextView
+                        android:id="@+id/frg_user_tv_power"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:text="汽油"
+                        android:textColor="@color/color_text_black" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/frg_user_rl2_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@id/frg_user_rl2_2">
+
+                    <ImageView
+                        android:id="@+id/frg_user_iv_displacement"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:background="@drawable/icon_displacement" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/half_of_16dp"
+                        android:layout_toRightOf="@+id/frg_user_iv_displacement"
+                        android:text="排量"
+                        android:textColor="@color/color_text_black" />
+
+                    <TextView
+                        android:id="@+id/frg_user_tv_displacement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:text="1.4-2.0 L"
+                        android:textColor="@color/color_text_black" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/frg_user_rl2_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/frg_user_rl2_3">
+
+                    <ImageView
+                        android:id="@+id/frg_user_iv_weight"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                        android:background="@drawable/icon_weight" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/half_of_16dp"
+                        android:layout_toRightOf="@+id/frg_user_iv_weight"
+                        android:text="重量"
+                        android:textColor="@color/color_text_black" />
+
+                    <TextView
+                        android:id="@+id/frg_user_tv_weight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:text="低于1.5t"
+                        android:textColor="@color/color_text_black" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="48dp"
+                    android:background="@color/color_bg_fragment" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="96dp"
+                    android:background="@color/color_bg_fragment" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="144dp"
+                    android:background="@color/color_bg_fragment" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/frg_user_btn_unregister"
+                android:layout_width="144dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/frg_user_rl2"
+                android:layout_marginTop="64dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:background="@drawable/btn_red"
+                android:text="退出登录"
+                android:textColor="@color/color_text_white" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

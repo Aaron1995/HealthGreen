@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">康行</string>
+
+    <string name="user">用户</string>
+    <string name="password">密码</string>
+    <string name="first_welcome">欢迎来到康行</string>
+    <string name="login_please">请先登录</string>
+    <string name="phone">手机</string>
+    <string name="confirm">确认</string>
+    <string name="input_code">输入</string>
+    <string name="get_code">获取验证码</string>
+
+
+    <string name="settings">设 置</string>
+    <string name="setting_sex">性别</string>
+    <string name="setting_man">男</string>
+    <string name="setting_woman">女</string>
+    <string name="setting_height">身高</string>
+    <string name="setting_weight">体重</string>
+    <string name="setting_ages">年龄</string>
+    <string name="setting_fvc">肺活量</string>
+    <string name="setting_boolean_car">是否有车</string>
+
+
+    <string name="car_kind">车型</string>
+    <string name="car_power">动力</string>
+    <string name="car_displacement">排量</string>
+
+
+    <string name="home_inhale">吸入</string>
+    <string name="home_stay">沉留</string>
+    <string name="home_exhaust">尾气</string>
+    <string name="home_gasoline">汽油</string>
+
+    <string name="car_add">添加</string>
+
+    <string name="error_network">搜索失败,请检查网络连接！</string>
+    <string name="error_key">key验证无效！</string>
+    <string name="error_other">未知错误，请稍后重试!错误码为</string>
+    <string name="no_result">对不起，没有搜索到相关数据！</string>
+
+
+
+    <string name="string_map">地图</string>
+    <string name="string_title">康 行</string>
+    <string name="string_person">个人记录</string>
+    <string name="string_car">车辆记录</string>
+    <string name="string_user">用户中心</string>
+
+    <string name="ringview_body_stay">存留体内</string>
+    <string name="ringview_exhaust_unit">mg</string>
+</resources>

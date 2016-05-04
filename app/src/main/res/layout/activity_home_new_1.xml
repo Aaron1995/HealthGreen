@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/home_new_1_rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/bg_blue"
+        android:elevation="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/string_title"
+            android:textColor="@color/color_text_white" />
+    </RelativeLayout>
+
+    <com.aarondesign.healthgreen.ModifyView.HomeScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/home_new_1_rl_map"
+        android:layout_below="@+id/home_new_1_rl_title">
+
+        <RelativeLayout
+            android:id="@+id/home_new_1_hsv_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/hsv_rl_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></RelativeLayout>
+        </RelativeLayout>
+
+    </com.aarondesign.healthgreen.ModifyView.HomeScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/home_new_1_rl_map"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bg_gray_black">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/string_map"
+            android:textColor="@color/color_text_white" />
+    </RelativeLayout>
+
+</RelativeLayout>
